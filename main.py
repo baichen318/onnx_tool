@@ -39,10 +39,9 @@ def parse_onnx(argv):
 				import warnings
 				warnings.warn(str(e))
 
-		# inferred_model = shape_inference.infer_shapes(model)
+		inferred_model = shape_inference.infer_shapes(model)
 
-		# return inferred_model
-		return model
+		return inferred_model
 
 	if not os.path.exists(argv.onnx_model):
 		logging("%s not found." % model, level="ERROR")

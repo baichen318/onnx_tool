@@ -6,7 +6,7 @@ import sys
 import os
 
 class ONNXGraph(object):
-	"""docstring for ONNXGraph"""
+	"""Add layers to be splitted for ONNXGraph"""
 	layer = ["Upsample", "InstanceNormalization", "ConvTranspose", \
 		"Constant", "Exp", "ReduceSum", "Div", "Shape"]
 
